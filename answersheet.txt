@@ -1,0 +1,88 @@
+Module 1
+q1: df.tail(10)
+q2: df.columns
+q3: df[["length","compression-ratio"]].describe()
+
+comma separated values
+column
+target
+df.head()
+df.dtypes
+df.describe()
+false
+
+
+Module 2
+
+q1 : avg_stroke=df['stroke'].astype('float').mean(axis=0)
+avg_stroke
+
+df["stroke"].replace(np.nan, avg_stroke, inplace=True)
+
+q2: df["highway-L/100km"]= 235/df["highway-mpg"]
+df.rename(columns={'highway-mpg':'highway-L/100km'}, inplace=True)
+df.head()
+
+q3: df['height'] = df['height']/df['height'].max()
+df[["height","width","length"]].head()
+
+
+Every element in the column "symbolling" will increase by one.
+Nothing. You must set the parameter "inplace = True".
+Convert or cast the column 'price' to an integer value.
+1
+gas and diesel
+1 and 0
+
+
+Mod 3
+
+df.describe()
+the average price for each body style
+false
+-1
+1
+
+
+Mod 4
+
+100
+1
+Although the predictor variables of polynomial linear regression are not linear, the relationship between the parameters or coefficients is linear.
+false
+Standardize the data, then perform prediction using a linear regression model.
+
+
+mod 5 
+
+8
+train_test_split(x_data, y_data, test_size=0.4, random_state=0)
+The average R^2 on the test data for each of the two folds.
+RR=Ridge(alpha=10)
+[{'alpha': [1,10,100]}]
+
+
+exam answers
+1 Drop the “not a number” values from the column "price".
+df.describe(include = "all")
+df.shape
+
+Save the dataframe df to a csv file called "A.csv".
+Builds a bin array ranging from the smallest value to the largest value of "city-mpg" in order to build 4 bins of equal length.
+
+Replace the "not a number" values with 5 in the column 'peak-rpm'.
+pd.get_dummies(df["fuel-type"])
+Dependent variable
+Independent variable
+10*10
+1
+two variables are correlated
+none of the above
+create a linear regression object
+mlr
+standardize,perform lsr
+1
+2
+The results on your training data is not the best indicator of how your model performs. You should use your test data to get a beter idea.
+
+Nothing. Your model performs flawlessly on your validation data.
